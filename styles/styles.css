@@ -1,0 +1,236 @@
+:root {
+  --clr-primary-800: hsl(0, 78%, 62%);
+  --clr-primary-700: hsl(180, 62%, 55%);
+  --clr-primary-600: hsl(34, 97%, 64%);
+  --clr-primary-500: hsl(212, 86%, 64%);
+
+  --clr-secondary-300: hsl(234, 12%, 34%);
+  --clr-secondary-200: hsl(229, 6%, 66%);
+  --clr-secondary-100: hsl(0, 0%, 98%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fw-semibold: 600;
+  --fw-regular: 400;
+  --fw-light: 300;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--clr-secondary-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--clr-secondary-100);
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 1331px;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  background-color: var(--clr-secondary-100);
+  width: 23.4375rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.wrapper {
+  padding: 1em;
+}
+
+.heading__description {
+  font-size: 1.5rem;
+  font-weight: var(--fw-light);
+}
+h1 {
+  color: var(--clr-secondary-300);
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold);
+}
+.heading__description_main {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    min-height: 50em;
+  }
+  main {
+    background-color: var(--clr-secondary-100);
+    width: 100%;
+  }
+  .heading__description {
+    font-size: 2.3rem;
+    font-weight: var(--fw-light);
+  }
+  h1 {
+    color: var(--clr-secondary-300);
+    font-size: 2.3rem;
+    font-weight: var(--fw-semibold);
+  }
+  .wrapper {
+    padding: 1em;
+  }
+  .supervisor,
+  .team_builder,
+  .karma,
+  .calculator {
+    max-width: 311px;
+    max-height: 192px;
+  }
+  .heading__description_main {
+    margin: 0 auto;
+    width: 35em;
+  }
+  .flex_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex_group__middle {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.supervisor {
+  border-top-style: solid;
+  border-top-color: var(--clr-primary-700);
+  border-top-width: 0.35em;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 10px 10px 1px rgba(143, 132, 190, 0.26);
+  border-radius: 0.5em;
+
+  padding: 1em;
+  min-height: 12em;
+  margin-top: 2rem;
+  /* overflow: hidden; */
+}
+.supervisor h2 {
+  color: var(--clr-secondary-300);
+  font-size: 1.3rem;
+  font-weight: var(--fw-semibold);
+  padding-top: 0.3rem;
+  text-align: left;
+}
+.supervisor p {
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  text-align: left;
+}
+.supervisor picture {
+  display: flex;
+  padding-top: 2.3rem;
+  padding-right: 1rem;
+  justify-content: flex-end;
+}
+
+.team_builder {
+  border-top-style: solid;
+  border-top-color: var(--clr-primary-800);
+  border-top-width: 0.35em;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 10px 10px 1px rgba(143, 132, 190, 0.26);
+  border-radius: 0.5em;
+  padding: 1em;
+  min-height: 12em;
+  margin-top: 2rem;
+  /* overflow: hidden; */
+}
+.team_builder h2 {
+  color: var(--clr-secondary-300);
+  font-size: 1.3rem;
+  font-weight: var(--fw-semibold);
+  padding-top: 0.3rem;
+  text-align: left;
+}
+.team_builder p {
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  text-align: left;
+}
+.team_builder picture {
+  display: flex;
+  padding-top: 2.3rem;
+  padding-right: 1rem;
+  justify-content: flex-end;
+}
+
+.karma {
+  border-top-style: solid;
+  border-top-color: var(--clr-primary-600);
+  border-top-width: 0.35em;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 10px 10px 1px rgba(143, 132, 190, 0.26);
+  border-radius: 0.5em;
+  padding: 1em;
+  min-height: 12em;
+  margin-top: 2rem;
+  /* overflow: hidden; */
+}
+.karma h2 {
+  color: var(--clr-secondary-300);
+  font-size: 1.3rem;
+  font-weight: var(--fw-semibold);
+  padding-top: 0.3rem;
+  text-align: left;
+}
+.karma p {
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  text-align: left;
+}
+.karma picture {
+  display: flex;
+  padding-top: 2.3rem;
+  padding-right: 1rem;
+  justify-content: flex-end;
+}
+
+.calculator {
+  border-top-style: solid;
+  border-top-color: var(--clr-primary-500);
+  border-top-width: 0.35em;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0px 10px 10px 1px rgba(143, 132, 190, 0.26);
+  border-radius: 0.5em;
+  padding: 1em;
+  min-height: 12em;
+  margin-top: 2rem;
+  /* overflow: hidden; */
+}
+.calculator h2 {
+  color: var(--clr-secondary-300);
+  font-size: 1.3rem;
+  font-weight: var(--fw-semibold);
+  padding-top: 0.3rem;
+  text-align: left;
+}
+.calculator p {
+  font-size: 0.9375rem;
+  font-weight: var(--fw-regular);
+  text-align: left;
+}
+.calculator picture {
+  display: flex;
+  padding-top: 2.3rem;
+  padding-right: 1rem;
+  justify-content: flex-end;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
